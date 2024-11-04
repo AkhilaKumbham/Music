@@ -116,7 +116,7 @@ input[type="range"]{
 
 /* Styling for the large thumbnail container (e.g., album art) */
 .thumbnail-container{
-    width:470px;
+    width:420px;
     height: 489px;
     border-radius: 21px;
     background: linear-gradient(0deg, #d9d9d9 0%, #d9d9d9 100%, #fff);
@@ -336,7 +336,6 @@ display:none;
      position: relative; 
 
   } 
-  
   .verfied-bedge{
     position: relative;
     bottom: 62px;
@@ -400,23 +399,7 @@ display:none;
   #previewDescription {
     font-size: 16px;
   }
-  
-  #follow-count {
-    color: #121212;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
-    margin-bottom: 8px;
-  }
-  
-  #listner-count {
-    color: #121212;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
-    margin-top: 36px;
-    margin-bottom: 8px;
-  }
+
   
   #preview-description {
     color: #000001;
@@ -426,3 +409,86 @@ display:none;
     font-weight: 400;
   }
   
+
+  /* Mobile view adjustments */
+@media (max-width: 480px) {
+    /* Main music player container */
+    .music-player {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    /* Adjust left section for track list */
+    .left-section {
+        padding: 20px;
+        row-gap: 20px;
+    }
+
+    /* Player controls section on the right */
+    .player-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Adjust the album thumbnail for mobile */
+    .thumbnail-container {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        max-height: 350px;
+    }
+
+    /* Progress bar for mobile */
+    .track-progress {
+        width: 90%;
+        margin: 0 auto 24px;
+    }
+
+    /* Song details */
+    #song-title, #song-artist {
+        font-size: 16px;
+    }
+
+    /* Adjust button sizes for mobile */
+    .control-button {
+        width: 36px;
+        height: 36px;
+        margin: 0 10px;
+    }
+
+    /* Volume control adjustments */
+    .volume-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .volume-range {
+        width: 90%;
+    }
+
+    /* Modal content for mobile */
+    .modal-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Modal image adjustments */
+    #preview-image {
+        height: auto;
+        max-height: 180px;
+    }
+
+    /* Dropdown adjustments */
+    .custom-dropdown-container {
+        width: 100%;
+    }
+
+    .custom-dropdown-selected {
+        padding: 12px;
+    }
+
+    .custom-dropdown-items {
+        width: 100%;
+    }
+}
